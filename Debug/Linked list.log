@@ -1,2 +1,14 @@
 ﻿  Linked list.cpp
+C:\cpp\Data Structures\Linked list\Linked list.cpp(93,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\cpp\Data Structures\Linked list\Linked list.cpp(90): message : во время компиляции функции-члена класс шаблон "void List<int>::emplace(int,T)"
+          with
+          [
+              T=int
+          ]
+C:\cpp\Data Structures\Linked list\Linked list.cpp(141): message : выполняется компиляция ссылки на экземпляр шаблон функции "void List<int>::emplace(int,T)"
+          with
+          [
+              T=int
+          ]
+C:\cpp\Data Structures\Linked list\Linked list.cpp(133): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "List<int>"
   Linked list.vcxproj -> C:\cpp\Data Structures\Linked list\Debug\Linked list.exe
