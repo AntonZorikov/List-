@@ -1,14 +1,31 @@
 ﻿  Linked list.cpp
-C:\cpp\Data Structures\Linked list\Linked list.cpp(93,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\cpp\Data Structures\Linked list\Linked list.cpp(122,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\cpp\Data Structures\Linked list\Linked list.cpp(119): message : во время компиляции функции-члена класс шаблон "void List<int>::insert(int,T)"
+          with
+          [
+              T=int
+          ]
+C:\cpp\Data Structures\Linked list\Linked list.cpp(164): message : выполняется компиляция ссылки на экземпляр шаблон функции "void List<int>::insert(int,T)"
+          with
+          [
+              T=int
+          ]
+C:\cpp\Data Structures\Linked list\Linked list.cpp(155): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "List<int>"
+C:\cpp\Data Structures\Linked list\Linked list.cpp(93,16): warning C4018: <: несоответствие типов со знаком и без знака
 C:\cpp\Data Structures\Linked list\Linked list.cpp(90): message : во время компиляции функции-члена класс шаблон "void List<int>::emplace(int,T)"
           with
           [
               T=int
           ]
-C:\cpp\Data Structures\Linked list\Linked list.cpp(141): message : выполняется компиляция ссылки на экземпляр шаблон функции "void List<int>::emplace(int,T)"
+C:\cpp\Data Structures\Linked list\Linked list.cpp(163): message : выполняется компиляция ссылки на экземпляр шаблон функции "void List<int>::emplace(int,T)"
           with
           [
               T=int
           ]
-C:\cpp\Data Structures\Linked list\Linked list.cpp(133): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "List<int>"
+C:\cpp\Data Structures\Linked list\Linked list.cpp(69,16): warning C4018: >: несоответствие типов со знаком и без знака
+C:\cpp\Data Structures\Linked list\Linked list.cpp(68): message : во время компиляции функции-члена класс шаблон "void List<int>::resize(int)"
+C:\cpp\Data Structures\Linked list\Linked list.cpp(165): message : выполняется компиляция ссылки на экземпляр шаблон функции "void List<int>::resize(int)"
+C:\cpp\Data Structures\Linked list\Linked list.cpp(70,20): warning C4018: >: несоответствие типов со знаком и без знака
+C:\cpp\Data Structures\Linked list\Linked list.cpp(76,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\cpp\Data Structures\Linked list\Linked list.cpp(78,20): warning C4018: <: несоответствие типов со знаком и без знака
   Linked list.vcxproj -> C:\cpp\Data Structures\Linked list\Debug\Linked list.exe

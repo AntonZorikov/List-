@@ -90,8 +90,19 @@ struct List
 	void emplace(int position, T val) {
 		int s = 0;
 		Node<T>* node = first;
-		if (size < position || position < 0) {
-			cout << "Error: Insertion position is not correct" << endl;
+		if (size - 1 < position || position < 0) {
+			cout << "Error: Replacement position is not correct" << endl;
+		}
+		else if (s == position - 1) {
+			node->next_node = new Node<T>(val, (node->next_node)->next_node);
+		}
+		else if (position == 0) {
+			Node<T>* node_ = new Node<T>(val, first->next_node);
+			first = node_;
+		}
+		else if (position == size - 1) {
+			last->data = val;
+			return;
 		}
 		else {
 			Node<T>* node = first;
@@ -99,7 +110,6 @@ struct List
 				node = node->next_node;
 				s++;
 				if (s == position - 1) {
-
 					node->next_node = new Node<T>(val, (node->next_node)->next_node);
 					break;
 				}
@@ -112,16 +122,28 @@ struct List
 		if (size < position || position < 0) {
 			cout << "Error: Insertion position is not correct" << endl;
 		}
+		else if (s == position - 1) {
+			node->next_node = new Node<T>(val, node->next_node);
+		}
+		else if (position == 0) {
+			Node<T>* node_ = nullptr;
+			node_ = new Node<T>(val, first);
+			first = node_;
+		}
+		else if (position == size) {
+			push_back(val);
+			return;
+		}
 		else {
-			Node<T>* node = first;
-			while (s != position - 1) {
+			while (s != position + 1) {
 				node = node->next_node;
 				s++;
-				if (s == position - 1) {
 
+				if (s == position - 1) {
 					node->next_node = new Node<T>(val, node->next_node);
 					break;
-				}
+				}			
+
 			}
 		}
 		size++;
@@ -138,8 +160,13 @@ int main()
 	list.push_back(5);
 	list.push_back(6);
 	list.push_back(7);
-	list.insert(1, 50);
+	list.emplace(6, 25);
+	list.insert(7, 50);
+	list.resize(10);
+	list.push_back(7);
+	list.resize(100);
+	list.emplace(98, 250);
+	list.insert(100, 500);
 	list.show_list();
-	//emplace and insert cant work with 1 and 2
 }
 
